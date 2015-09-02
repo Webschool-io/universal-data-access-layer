@@ -11,3 +11,8 @@ A ideia é que essa API tenha a mesma interface de CRUD para qualquer banco, por
 Porque eu sempre evangelizei essa arquitetura híbrida de Bancos NoSQL desde 2012 pelo menos.
 
 ## API CRUD
+
+- Create: `insert` ou `save`
+- Retrieve: `find` e `findOne`
+- Update: `update` ou `save`
+- Delete: `remove`
