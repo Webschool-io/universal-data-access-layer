@@ -16,3 +16,8 @@ Porque eu sempre evangelizei essa arquitetura híbrida de Bancos NoSQL desde 201
 - Retrieve: `find` e `findOne`
 - Update: `update` ou `save`
 - Delete: `remove`
+
+### Create
+### Retrieve
+### Update
+### Delete
