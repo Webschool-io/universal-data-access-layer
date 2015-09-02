@@ -18,6 +18,20 @@ Porque eu sempre evangelizei essa arquitetura híbrida de Bancos NoSQL desde 201
 - Delete: `remove`
 
 ### Create
+
+A função para **inserir** um dado usando ou `insert` ou `save` será passando o objeto a ser inserido no parâmetro da função, essa tendo setado a conexão e o Model/Coleção/Tabela onde será inserido. Por exemplo:
+
+```js
+var MongoDB = require('UniversalDataAccessLayer')('MongoDB');
+// MongoDB.connect('mongodb://localhost:27017'); a conexão ja estará no config.js
+var Schema = new MongoDB.Schema({name: {type: String, required: true});
+var Model = new MongoDb.Model(Schema);
+
+var User = new Model({name: "Suissa"});
+User.save(callback);
+// ou User.insert({name: "Suissa"}, callback);
+```
+
 ### Retrieve
 ### Update
 ### Delete
