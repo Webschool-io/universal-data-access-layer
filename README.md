@@ -10,6 +10,17 @@ E assim vai! E claro que tudo via REST.
 A ideia é que essa API tenha a mesma interface de CRUD para qualquer banco, porém para cada TIPO de banco exista uma interface mais especializada para ele, diferentemente dos relacionais que são todos iguais.
 Porque eu sempre evangelizei essa arquitetura híbrida de Bancos NoSQL desde 2012 pelo menos.
 
+## Arquitetura híbrida
+
+> Também conhecido como Persistência Poliglota.
+
+Para essa arquitetura inicial de bancos NoSQL iremos utilizar:
+
+- MongoDB: modelo central
+- Neo4J: relacionamentos
+- Redis: Cache / PubSub / Sessão
+- ElasticSearch: busca textual
+
 ## API CRUD
 
 - Create: `insert` ou `save`
